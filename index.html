@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>vamphigia bio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+
+    .grid {
+  display: grid;
+  grid-template-columns: 1fr 20px 20px; /* agora tem 3 colunas */
+  gap: 18px;
+  margin-top: 18px;
+}
+
+    :root{
+      --bg1:#0b0b0d;
+      --bg2:#111117;
+      --panel:#0f0f12cc;
+      --accent:#9c7cff;
+      --muted:#ffffff;
+      --glass: rgba(255,255,255,0.03);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      background: url("black.gif") center center / cover no-repeat fixed;
+      color:#fdfdfd;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:40px;
+    }
+
+    .card{
+      width:min(900px,80%);
+      height: min(908px,140%);
+      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+      border:1px solid rgba(255,255,255,0.1);
+      border-radius:16px;
+      padding:28px;
+      box-shadow:0 50px 30px rgba(0,0,0,0.6);
+      backdrop-filter: blur(70px) saturate(50%);
+      overflow:hidden;
+    }
+    
+
+.header {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  gap: 1px;             
+  text-align: center;     
+}
+    .avatar{
+      width:112px;height:112px;border-radius:px;flex:0 0 112px;overflow:hidden;
+      border:1px solid rgba(255,255,255,0.06);
+    }
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    .name{
+      display:flex;flex-direction:column;gap:6px;
+    }
+    .name h1 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  letter-spacing: 10px;
+  text-align: center; /* centraliza o título */
+}
+.meta {
+  font-size: 14px;
+  color: var(--muted);
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* centraliza os itens */
+  align-items: center;
+}
+    .dot{width:6px;height:6px;background:var(--accent);margin:0 auto; border-radius:50%;display:inline-block}
+
+    hr.sep{border:0;border-top:1px solid rgba(255,255,255,0.04);margin:18px 0}
+
+    .bio {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #ffffff;
+  margin: 0 auto;
+  text-align: center; 
+}
+
+.quote {
+  margin-top: 26px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: rgba(255,255,255,0.9);
+  font-size: 16px;
+  text-align: center;
+}
+    .grid{
+      display:grid;grid-template-columns:1fr 220px;gap:18px;margin-top:18px;
+    }
+
+    .panel{background:var(--glass);padding:px;border-radius:1px;border:1px solid rgba(255,255,255,0.02)}
+
+    .likes, .links{display:flex;align-items: center;flex-direction:column;gap:8px}
+    .tag{display:inline-block;align-items: center;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.1);font-size:13px;color:var(--muted);border:1px solid rgba(255,255,255,0.1)}
+
+    .links a{display:block;text-decoration:none;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.1);background:linear-gradient(180deg,rgba(255,255,255,0.05),transparent);color:#e8e9ee}
+    .links a:hover{transform:translateY(-3px);transition:all .18s ease}
+
+    .icons{display:flex;align-items: center;gap:10px;align-items:center}
+
+    .gallery{display:flex;gap:80px;flex-wrap:wrap}
+    .gallery img{width:calc(40% - 94px);border-radius:10px;object-fit:cover;height:150px}
+
+    .footer{margin-top:18px;align-items: center;text-align:center;font-size:13px;color:var(--muted)}
+
+
+  
+    @media (max-width:720px){
+      .grid{grid-template-columns:1fr;}
+      .avatar{width:88px;height:88px;flex:0 0 88px}
+    }
+  </style>
+</head>
+<body>
+
+  <audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <main class="card" role="main">
+    <header class="header">
+      <div class="avatar">
+        <img src="profile.jpeg" alt="avatar">
+      </div>
+      <div class="name">
+        <h1>vamphigia !</h1>
+        <div class="meta"><span>20y</span><span>•</span><span>ela/dela</span><span>•</span><span class="tag">stay here</span></div>
+        <div class="meta"></div>
+      </div>
+    </header>
+
+    <hr class="sep">
+    
+
+    <section class="bio">
+      <p>Seja bem vindo/a ao conforto do meu espaço.</p>
+      <p class="quote">"Não é a espada que decide a vitória, mas a mente que a empunha."</p>
+    </section>
+
+    <div class="grid">
+      <div class="panel">
+        <h3 style="margin:17px;font-size:15px; text-align:center">i m a g e s</h3>
+        <div class="gallery">
+          <img src="jojogif.gif" alt="img">
+          <img src="vamp.gif" alt="img">
+          <img src="jojo.gif" alt="img">
+          <img src="jooj.gif" alt="img">
+          <img src="vampig.gif" alt="img">
+          <img src="dio.gif" alt="img">
+        </div>
+
+        <hr style="margin:12px 0;border:0;border-top:1px solid rgba(255,255,255,0.03)">
+
+        <h3 style="margin:10px 0;font-size:16px; text-align:center">i n f o</h3>
+        <div style="display:flex;align-items: center;flex-direction:column;gap:6px">
+          <div><strong>GOSTO:</strong> Cor preta, jogos, hunt e camarão.</div>
+          <div><strong>DESGOSTO:</strong> tudo e todos.</div>
+        </div>
+      </div>
+
+      <aside class="panel">
+       <h3 style="margin:10px 0;font-size:16px; text-align:center">l i n k s</h3>
+
+
+        <nav class="links">
+          <a href="https://steamcommunity.com/profiles/76561199485356025/"  target="_blank">Steam • 000</a>
+          <a href="https://www.youtube.com/watch?v=867xE1BH3t4" target="_blank">Best video </a>
+          <a href="https://www.instagram.com/vamphigia/" target="_blank">Instagram  </a>
+          <a href="discordapp.com/users/1095790443276546129" target="_blank">Discord • vamphigia </a>
+        </nav>
+
+        <hr style="margin:12px 0;border:0;border-top:1px solid rgba(255,255,255,0.03)">
+        <img src="noface.gif" alt="ícone animado" width="32" height="32"> <img src="noface.gif" alt="ícone animado" width="32" height="32"><img src="noface.gif" alt="ícone animado" width="32" height="32"> <img src="noface.gif" alt="ícone animado" width="32" height="32"> <img src="noface.gif" alt="ícone animado" width="32" height="32"> <img src="noface.gif" alt="ícone animado" width="32" height="32"> 
+
+        <div class="about" style="display:flex;align-items: center;flex-direction:column;gap:8px">
+          <div class="tag">cats</div>
+          <div class="tag">goth</div>
+          <div class="tag">Hunt</div>
+          
+          
+        </div>
+      </aside>
+    </div>
+
+    <div class="footer" style ="margin:1px 0;font-size:12px; text-align:right">made with ♥ — tai </div>
+  </main>
+</body>
+</html>
